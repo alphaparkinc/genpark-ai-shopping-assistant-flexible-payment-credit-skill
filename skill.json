@@ -1,0 +1,38 @@
+{
+  "name": "genpark-ai-shopping-assistant-flexible-payment-credit-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI shopping assistant, interest-free Pay-in-4 flexible credit planner, and automated price drop refund monitor.",
+  "author": "genpark",
+  "category": "fintech",
+  "tags": [
+    "pay-in-4",
+    "bnpl",
+    "ai-shopping-assistant",
+    "price-drop-protection",
+    "klarna"
+  ],
+  "inputs": {
+    "purchase_total_usd": {
+      "type": "number"
+    },
+    "user_account_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "klarna_session_id": {
+      "type": "string"
+    },
+    "pay_in_4_installments": {
+      "type": "array"
+    },
+    "interest_apr_pct": {
+      "type": "number"
+    },
+    "ai_price_drop_protection_active": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
